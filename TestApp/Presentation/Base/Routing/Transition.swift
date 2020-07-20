@@ -10,6 +10,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+// Типы переходов, которые передаются в Coordinator
 enum Transition {
     case listItemMenu(initialTitle: String, onUpdateAction: PublishRelay<String>?)
 }

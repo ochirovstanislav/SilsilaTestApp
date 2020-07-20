@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Протокол для ячейки таблицы с инъекцией модели ячейки
 protocol CellProtocol where Self: UITableViewCell {
     func setup(with cellModel: CellModelProtocol)
 }

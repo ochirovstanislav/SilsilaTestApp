@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Протокол для модели ячейки
 protocol CellModelProtocol {
 
     static var cellIdentifier: String { get }

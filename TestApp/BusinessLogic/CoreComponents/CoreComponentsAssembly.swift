@@ -8,12 +8,18 @@
 
 import Swinject
 
+// DI для основных компонентов
+
 final class CoreComponentsAssembly: Assembly {
 
     func assemble(container: Container) {
         
         container.register(DatabaseManager.self) { r in
             return DatabaseManager()
+        }
+
+        container.register(XMLParserManager.self) { r in
+            return XMLParserManager()
         }
     }
 }

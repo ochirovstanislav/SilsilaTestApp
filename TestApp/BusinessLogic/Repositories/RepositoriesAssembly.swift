@@ -8,6 +8,8 @@
 
 import Swinject
 
+// DI для репозиториев
+
 final class RepositoriesAssembly: Assembly {
 
     func assemble(container: Container) {
@@ -15,6 +17,14 @@ final class RepositoriesAssembly: Assembly {
             let databaseManager = r.resolve(DatabaseManager.self)!
 
             return ListRepository(databaseManager: databaseManager)
+        }
+
+        container.register(ServiceRepository.self) { r in
+            let xmlParserManager = r.resolve(XMLParserManager.self)!
+            let serviceListService = r.resolve(ServiceListService.self)!
+
+            return ServiceRepository(serviceListService: serviceListService,
+                                     xmlParserManager: xmlParserManager)
         }
     }
 }

@@ -8,6 +8,7 @@
 
 import RealmSwift
 
+// Менеджер для взаимодействия с бд
 final class DatabaseManager: DatabaseManagerProtocol {
 
     private let realm = try! Realm()

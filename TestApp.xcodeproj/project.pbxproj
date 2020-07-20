@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		33A1923652771701ED0B245A /* Pods_TestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD9BAFDD2D66C2A0878C274 /* Pods_TestApp.framework */; };
+		850AE17C24C5571E00AA5FC1 /* ServiceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850AE17B24C5571E00AA5FC1 /* ServiceListViewController.swift */; };
+		850AE17F24C5575A00AA5FC1 /* ServiceItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850AE17E24C5575A00AA5FC1 /* ServiceItemCell.swift */; };
+		850AE18324C5714D00AA5FC1 /* XMLParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850AE18224C5714D00AA5FC1 /* XMLParserManager.swift */; };
+		850AE18624C57C7D00AA5FC1 /* ServiceListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850AE18524C57C7D00AA5FC1 /* ServiceListService.swift */; };
+		850AE18824C590F300AA5FC1 /* ServiceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850AE18724C590F300AA5FC1 /* ServiceRepository.swift */; };
+		850AE18B24C5934A00AA5FC1 /* XMLParserManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850AE18A24C5934A00AA5FC1 /* XMLParserManagerProtocol.swift */; };
+		850AE18F24C5938500AA5FC1 /* ServiceRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850AE18E24C5938500AA5FC1 /* ServiceRepositoryProtocol.swift */; };
+		850AE19124C5939D00AA5FC1 /* ListRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850AE19024C5939D00AA5FC1 /* ListRepositoryProtocol.swift */; };
+		8531F45524C5BE8C0012EA98 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8531F45724C5BE8C0012EA98 /* Localizable.strings */; };
+		8531F45924C5C64A0012EA98 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8531F45824C5C64A0012EA98 /* LocalizedStrings.swift */; };
+		8531F45B24C5CE7F0012EA98 /* ServiceItemCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8531F45A24C5CE7F0012EA98 /* ServiceItemCellModel.swift */; };
+		8531F45E24C5DA870012EA98 /* ServiceListItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8531F45D24C5DA870012EA98 /* ServiceListItemModel.swift */; };
 		85763B0124C3D64C002760BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B0024C3D64C002760BD /* AppDelegate.swift */; };
 		85763B0524C3D64D002760BD /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B0424C3D64D002760BD /* ListViewController.swift */; };
 		85763B0A24C3D64E002760BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85763B0924C3D64E002760BD /* Assets.xcassets */; };
@@ -34,6 +46,12 @@
 		85763B4E24C52672002760BD /* RepositoriesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B4D24C52672002760BD /* RepositoriesAssembly.swift */; };
 		85763B5124C5271F002760BD /* CoreComponentsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B5024C5271F002760BD /* CoreComponentsAssembly.swift */; };
 		85763B5624C5294C002760BD /* TabBarChildProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B5524C5294C002760BD /* TabBarChildProtocol.swift */; };
+		8577EF3324C595DC00CBAFC0 /* ServiceListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577EF3224C595DC00CBAFC0 /* ServiceListDataSource.swift */; };
+		8577EF3524C595ED00CBAFC0 /* ServiceListDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577EF3424C595ED00CBAFC0 /* ServiceListDataSourceProtocol.swift */; };
+		8577EF3824C5961B00CBAFC0 /* ServiceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577EF3724C5961B00CBAFC0 /* ServiceListViewModel.swift */; };
+		8577EF3B24C5963B00CBAFC0 /* ServiceListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577EF3A24C5963B00CBAFC0 /* ServiceListAssembly.swift */; };
+		8577EF3D24C5985100CBAFC0 /* ServiceListServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577EF3C24C5985100CBAFC0 /* ServiceListServiceProtocol.swift */; };
+		8577EF3F24C5990E00CBAFC0 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577EF3E24C5990E00CBAFC0 /* ServiceAssembly.swift */; };
 		85E1EF9424C52B300085AAB6 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E1EF9324C52B300085AAB6 /* TabBarAssembly.swift */; };
 		85E1EF9624C5314A0085AAB6 /* ListItemMenuAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E1EF9524C5314A0085AAB6 /* ListItemMenuAssembly.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +59,19 @@
 /* Begin PBXFileReference section */
 		0AD3A57344D1D307B4BF5B06 /* Pods-TestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp.debug.xcconfig"; path = "Target Support Files/Pods-TestApp/Pods-TestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7587C0240C5E87402FA17DEA /* Pods-TestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp.release.xcconfig"; path = "Target Support Files/Pods-TestApp/Pods-TestApp.release.xcconfig"; sourceTree = "<group>"; };
+		850AE17B24C5571E00AA5FC1 /* ServiceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListViewController.swift; sourceTree = "<group>"; };
+		850AE17E24C5575A00AA5FC1 /* ServiceItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceItemCell.swift; sourceTree = "<group>"; };
+		850AE18224C5714D00AA5FC1 /* XMLParserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParserManager.swift; sourceTree = "<group>"; };
+		850AE18524C57C7D00AA5FC1 /* ServiceListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListService.swift; sourceTree = "<group>"; };
+		850AE18724C590F300AA5FC1 /* ServiceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRepository.swift; sourceTree = "<group>"; };
+		850AE18A24C5934A00AA5FC1 /* XMLParserManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParserManagerProtocol.swift; sourceTree = "<group>"; };
+		850AE18E24C5938500AA5FC1 /* ServiceRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRepositoryProtocol.swift; sourceTree = "<group>"; };
+		850AE19024C5939D00AA5FC1 /* ListRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoryProtocol.swift; sourceTree = "<group>"; };
+		8531F45024C5BE350012EA98 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8531F45624C5BE8C0012EA98 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8531F45824C5C64A0012EA98 /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
+		8531F45A24C5CE7F0012EA98 /* ServiceItemCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceItemCellModel.swift; sourceTree = "<group>"; };
+		8531F45D24C5DA870012EA98 /* ServiceListItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListItemModel.swift; sourceTree = "<group>"; };
 		85763AFD24C3D64C002760BD /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85763B0024C3D64C002760BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85763B0424C3D64D002760BD /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +100,12 @@
 		85763B4D24C52672002760BD /* RepositoriesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesAssembly.swift; sourceTree = "<group>"; };
 		85763B5024C5271F002760BD /* CoreComponentsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreComponentsAssembly.swift; sourceTree = "<group>"; };
 		85763B5524C5294C002760BD /* TabBarChildProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarChildProtocol.swift; sourceTree = "<group>"; };
+		8577EF3224C595DC00CBAFC0 /* ServiceListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListDataSource.swift; sourceTree = "<group>"; };
+		8577EF3424C595ED00CBAFC0 /* ServiceListDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListDataSourceProtocol.swift; sourceTree = "<group>"; };
+		8577EF3724C5961B00CBAFC0 /* ServiceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListViewModel.swift; sourceTree = "<group>"; };
+		8577EF3A24C5963B00CBAFC0 /* ServiceListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListAssembly.swift; sourceTree = "<group>"; };
+		8577EF3C24C5985100CBAFC0 /* ServiceListServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListServiceProtocol.swift; sourceTree = "<group>"; };
+		8577EF3E24C5990E00CBAFC0 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		85E1EF9324C52B300085AAB6 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
 		85E1EF9524C5314A0085AAB6 /* ListItemMenuAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemMenuAssembly.swift; sourceTree = "<group>"; };
 		CDD9BAFDD2D66C2A0878C274 /* Pods_TestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +132,128 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		850AE17924C5570900AA5FC1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8531F45C24C5DA7B0012EA98 /* Entity */,
+				8577EF3924C5962E00CBAFC0 /* Assembly */,
+				8577EF3624C5960C00CBAFC0 /* Model */,
+				850AE17A24C5570E00AA5FC1 /* View */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		850AE17A24C5570E00AA5FC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8577EF3124C595D200CBAFC0 /* DataSource */,
+				850AE17D24C5574300AA5FC1 /* Cells */,
+				850AE17B24C5571E00AA5FC1 /* ServiceListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		850AE17D24C5574300AA5FC1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				850AE17E24C5575A00AA5FC1 /* ServiceItemCell.swift */,
+				8531F45A24C5CE7F0012EA98 /* ServiceItemCellModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		850AE18124C5713F00AA5FC1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				85763B2324C3F023002760BD /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		850AE18424C57C7000AA5FC1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8577EF3E24C5990E00CBAFC0 /* ServiceAssembly.swift */,
+				8531F46024C5DC1B0012EA98 /* ServiceListService */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		850AE18924C5934300AA5FC1 /* XMLParserManager */ = {
+			isa = PBXGroup;
+			children = (
+				850AE18224C5714D00AA5FC1 /* XMLParserManager.swift */,
+				850AE18A24C5934A00AA5FC1 /* XMLParserManagerProtocol.swift */,
+			);
+			path = XMLParserManager;
+			sourceTree = "<group>";
+		};
+		850AE18C24C5937700AA5FC1 /* ListRepository */ = {
+			isa = PBXGroup;
+			children = (
+				85763B1E24C3ED12002760BD /* ListRepository.swift */,
+				850AE19024C5939D00AA5FC1 /* ListRepositoryProtocol.swift */,
+			);
+			path = ListRepository;
+			sourceTree = "<group>";
+		};
+		850AE18D24C5937C00AA5FC1 /* ServiceRepository */ = {
+			isa = PBXGroup;
+			children = (
+				850AE18724C590F300AA5FC1 /* ServiceRepository.swift */,
+				850AE18E24C5938500AA5FC1 /* ServiceRepositoryProtocol.swift */,
+			);
+			path = ServiceRepository;
+			sourceTree = "<group>";
+		};
+		8531F45124C5BE4B0012EA98 /* Recourses */ = {
+			isa = PBXGroup;
+			children = (
+				85763B0E24C3D64E002760BD /* Info.plist */,
+				85763B0B24C3D64E002760BD /* LaunchScreen.storyboard */,
+				85763B0924C3D64E002760BD /* Assets.xcassets */,
+				8531F45224C5BE500012EA98 /* Localization */,
+			);
+			path = Recourses;
+			sourceTree = "<group>";
+		};
+		8531F45224C5BE500012EA98 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				8531F45724C5BE8C0012EA98 /* Localizable.strings */,
+				8531F45824C5C64A0012EA98 /* LocalizedStrings.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		8531F45C24C5DA7B0012EA98 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8531F45D24C5DA870012EA98 /* ServiceListItemModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		8531F45F24C5DB9E0012EA98 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				85763B5224C5283A002760BD /* TabBar */,
+				850AE17924C5570900AA5FC1 /* Service */,
+				85763B1624C3D9A9002760BD /* List */,
+				85763B3E24C4C4B4002760BD /* ListItemMenu */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8531F46024C5DC1B0012EA98 /* ServiceListService */ = {
+			isa = PBXGroup;
+			children = (
+				850AE18524C57C7D00AA5FC1 /* ServiceListService.swift */,
+				8577EF3C24C5985100CBAFC0 /* ServiceListServiceProtocol.swift */,
+			);
+			path = ServiceListService;
+			sourceTree = "<group>";
+		};
 		85763AF424C3D64C002760BD = {
 			isa = PBXGroup;
 			children = (
@@ -116,13 +275,11 @@
 		85763AFF24C3D64C002760BD /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
-				85763B4B24C5263E002760BD /* BusinessLogic */,
-				85763B2324C3F023002760BD /* Extensions */,
 				85763B0024C3D64C002760BD /* AppDelegate.swift */,
+				85763B4B24C5263E002760BD /* BusinessLogic */,
 				85763B2F24C4184D002760BD /* Presentation */,
-				85763B0924C3D64E002760BD /* Assets.xcassets */,
-				85763B0B24C3D64E002760BD /* LaunchScreen.storyboard */,
-				85763B0E24C3D64E002760BD /* Info.plist */,
+				850AE18124C5713F00AA5FC1 /* Helpers */,
+				8531F45124C5BE4B0012EA98 /* Recourses */,
 			);
 			path = TestApp;
 			sourceTree = "<group>";
@@ -184,10 +341,8 @@
 		85763B2F24C4184D002760BD /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				85763B5224C5283A002760BD /* TabBar */,
 				85763B3024C41857002760BD /* Base */,
-				85763B1624C3D9A9002760BD /* List */,
-				85763B3E24C4C4B4002760BD /* ListItemMenu */,
+				8531F45F24C5DB9E0012EA98 /* Modules */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -275,6 +430,7 @@
 		85763B4B24C5263E002760BD /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				850AE18424C57C7000AA5FC1 /* Network */,
 				85763B4F24C5270A002760BD /* CoreComponents */,
 				85763B4C24C52663002760BD /* Repositories */,
 			);
@@ -285,7 +441,8 @@
 			isa = PBXGroup;
 			children = (
 				85763B4D24C52672002760BD /* RepositoriesAssembly.swift */,
-				85763B1E24C3ED12002760BD /* ListRepository.swift */,
+				850AE18C24C5937700AA5FC1 /* ListRepository */,
+				850AE18D24C5937C00AA5FC1 /* ServiceRepository */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -294,6 +451,7 @@
 			isa = PBXGroup;
 			children = (
 				85763B5024C5271F002760BD /* CoreComponentsAssembly.swift */,
+				850AE18924C5934300AA5FC1 /* XMLParserManager */,
 				85763B2624C4043F002760BD /* Database */,
 			);
 			path = CoreComponents;
@@ -302,11 +460,36 @@
 		85763B5224C5283A002760BD /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				85E1EF9324C52B300085AAB6 /* TabBarAssembly.swift */,
 				85763B5524C5294C002760BD /* TabBarChildProtocol.swift */,
 				85763B1424C3D8E1002760BD /* TabBarController.swift */,
-				85E1EF9324C52B300085AAB6 /* TabBarAssembly.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		8577EF3124C595D200CBAFC0 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8577EF3224C595DC00CBAFC0 /* ServiceListDataSource.swift */,
+				8577EF3424C595ED00CBAFC0 /* ServiceListDataSourceProtocol.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		8577EF3624C5960C00CBAFC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8577EF3724C5961B00CBAFC0 /* ServiceListViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8577EF3924C5962E00CBAFC0 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				8577EF3A24C5963B00CBAFC0 /* ServiceListAssembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		94F5DA49D452CC9C4E2D9FBB /* Frameworks */ = {
@@ -361,6 +544,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 85763AF424C3D64C002760BD;
 			productRefGroup = 85763AFE24C3D64C002760BD /* Products */;
@@ -378,6 +562,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85763B0D24C3D64E002760BD /* LaunchScreen.storyboard in Resources */,
+				8531F45524C5BE8C0012EA98 /* Localizable.strings in Resources */,
 				85763B0A24C3D64E002760BD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,25 +620,42 @@
 				85763B1824C3D9BB002760BD /* ListViewModel.swift in Sources */,
 				85763B3324C4186E002760BD /* CellProtocol.swift in Sources */,
 				85763B0524C3D64D002760BD /* ListViewController.swift in Sources */,
+				850AE18B24C5934A00AA5FC1 /* XMLParserManagerProtocol.swift in Sources */,
+				8531F45E24C5DA870012EA98 /* ServiceListItemModel.swift in Sources */,
 				85763B2824C40448002760BD /* DatabaseManagerProtocol.swift in Sources */,
 				85763B2E24C41280002760BD /* CheckboxView.swift in Sources */,
+				8577EF3D24C5985100CBAFC0 /* ServiceListServiceProtocol.swift in Sources */,
 				85763B3D24C4B2D2002760BD /* ListViewDataSource.swift in Sources */,
+				8577EF3524C595ED00CBAFC0 /* ServiceListDataSourceProtocol.swift in Sources */,
+				8577EF3B24C5963B00CBAFC0 /* ServiceListAssembly.swift in Sources */,
+				850AE18324C5714D00AA5FC1 /* XMLParserManager.swift in Sources */,
 				85763B3724C4188E002760BD /* ListItemCellModel.swift in Sources */,
 				85763B2B24C4070A002760BD /* ListItemCell.swift in Sources */,
 				85763B4A24C52432002760BD /* ListViewDataSourceProtocol.swift in Sources */,
+				850AE18824C590F300AA5FC1 /* ServiceRepository.swift in Sources */,
 				85763B4024C4C4F7002760BD /* ListItemMenuViewController.swift in Sources */,
+				8577EF3324C595DC00CBAFC0 /* ServiceListDataSource.swift in Sources */,
 				85E1EF9624C5314A0085AAB6 /* ListItemMenuAssembly.swift in Sources */,
 				85763B4524C51E9E002760BD /* ListCoordinator.swift in Sources */,
 				85763B1A24C3E980002760BD /* ListAssembly.swift in Sources */,
 				85763B4824C51EC8002760BD /* Coordinator.swift in Sources */,
+				8577EF3824C5961B00CBAFC0 /* ServiceListViewModel.swift in Sources */,
 				85763B5624C5294C002760BD /* TabBarChildProtocol.swift in Sources */,
 				85763B1524C3D8E1002760BD /* TabBarController.swift in Sources */,
+				8577EF3F24C5990E00CBAFC0 /* ServiceAssembly.swift in Sources */,
+				850AE18624C57C7D00AA5FC1 /* ServiceListService.swift in Sources */,
+				850AE17C24C5571E00AA5FC1 /* ServiceListViewController.swift in Sources */,
 				85E1EF9424C52B300085AAB6 /* TabBarAssembly.swift in Sources */,
+				850AE19124C5939D00AA5FC1 /* ListRepositoryProtocol.swift in Sources */,
 				85763B5124C5271F002760BD /* CoreComponentsAssembly.swift in Sources */,
 				85763B4E24C52672002760BD /* RepositoriesAssembly.swift in Sources */,
+				8531F45924C5C64A0012EA98 /* LocalizedStrings.swift in Sources */,
 				85763B1D24C3EA51002760BD /* ListItemModel.swift in Sources */,
 				85763B1F24C3ED12002760BD /* ListRepository.swift in Sources */,
+				850AE18F24C5938500AA5FC1 /* ServiceRepositoryProtocol.swift in Sources */,
 				85763B2124C3EE96002760BD /* DatabaseManager.swift in Sources */,
+				850AE17F24C5575A00AA5FC1 /* ServiceItemCell.swift in Sources */,
+				8531F45B24C5CE7F0012EA98 /* ServiceItemCellModel.swift in Sources */,
 				85763B2524C3F02E002760BD /* RealmExtensions.swift in Sources */,
 				85763B0124C3D64C002760BD /* AppDelegate.swift in Sources */,
 				85763B3524C4187D002760BD /* CellModelProtocol.swift in Sources */,
@@ -463,10 +665,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		8531F45724C5BE8C0012EA98 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8531F45624C5BE8C0012EA98 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		85763B0B24C3D64E002760BD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				85763B0C24C3D64E002760BD /* Base */,
+				8531F45024C5BE350012EA98 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -478,6 +689,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -538,6 +750,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -595,7 +808,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RDY8LLF99L;
-				INFOPLIST_FILE = TestApp/Info.plist;
+				INFOPLIST_FILE = TestApp/Recourses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -614,7 +827,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RDY8LLF99L;
-				INFOPLIST_FILE = TestApp/Info.plist;
+				INFOPLIST_FILE = TestApp/Recourses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

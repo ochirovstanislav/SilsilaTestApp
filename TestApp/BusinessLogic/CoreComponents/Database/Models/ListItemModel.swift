@@ -9,6 +9,7 @@
 import Foundation
 import RealmSwift
 
+// Сущность со списка на первом экране
 final class ListItemModel: Object {
 
     @objc dynamic var id = UUID().uuidString

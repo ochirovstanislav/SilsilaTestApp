@@ -19,11 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         RepositoriesAssembly(),
         CoreComponentsAssembly(),
         TabBarAssembly(),
-        ListItemMenuAssembly()
+        ListItemMenuAssembly(),
+        ServiceListAssembly(),
+        ServiceAssembly()
     ])
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
+        
         let initialVC = assembler.resolver.resolve(TabBarController.self)
         let window = UIWindow(frame: UIScreen.main.bounds)
 

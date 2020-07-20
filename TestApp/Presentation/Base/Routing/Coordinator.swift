@@ -9,6 +9,7 @@
 import UIKit
 import Swinject
 
+// В координаторе содержится логика навигации модуля
 protocol Coordinator: AnyObject {
     
     func performTransition(transition: Transition)
