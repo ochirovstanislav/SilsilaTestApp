@@ -21,6 +21,21 @@
 		85763B2524C3F02E002760BD /* RealmExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B2424C3F02E002760BD /* RealmExtensions.swift */; };
 		85763B2824C40448002760BD /* DatabaseManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B2724C40448002760BD /* DatabaseManagerProtocol.swift */; };
 		85763B2B24C4070A002760BD /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B2A24C4070A002760BD /* ListItemCell.swift */; };
+		85763B2E24C41280002760BD /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B2D24C41280002760BD /* CheckboxView.swift */; };
+		85763B3324C4186E002760BD /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B3224C4186E002760BD /* CellProtocol.swift */; };
+		85763B3524C4187D002760BD /* CellModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B3424C4187D002760BD /* CellModelProtocol.swift */; };
+		85763B3724C4188E002760BD /* ListItemCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B3624C4188E002760BD /* ListItemCellModel.swift */; };
+		85763B3D24C4B2D2002760BD /* ListViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B3C24C4B2D2002760BD /* ListViewDataSource.swift */; };
+		85763B4024C4C4F7002760BD /* ListItemMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B3F24C4C4F7002760BD /* ListItemMenuViewController.swift */; };
+		85763B4324C51E56002760BD /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B4224C51E56002760BD /* Transition.swift */; };
+		85763B4524C51E9E002760BD /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B4424C51E9E002760BD /* ListCoordinator.swift */; };
+		85763B4824C51EC8002760BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B4724C51EC8002760BD /* Coordinator.swift */; };
+		85763B4A24C52432002760BD /* ListViewDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B4924C52432002760BD /* ListViewDataSourceProtocol.swift */; };
+		85763B4E24C52672002760BD /* RepositoriesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B4D24C52672002760BD /* RepositoriesAssembly.swift */; };
+		85763B5124C5271F002760BD /* CoreComponentsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B5024C5271F002760BD /* CoreComponentsAssembly.swift */; };
+		85763B5624C5294C002760BD /* TabBarChildProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B5524C5294C002760BD /* TabBarChildProtocol.swift */; };
+		85E1EF9424C52B300085AAB6 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E1EF9324C52B300085AAB6 /* TabBarAssembly.swift */; };
+		85E1EF9624C5314A0085AAB6 /* ListItemMenuAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E1EF9524C5314A0085AAB6 /* ListItemMenuAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +56,21 @@
 		85763B2424C3F02E002760BD /* RealmExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmExtensions.swift; sourceTree = "<group>"; };
 		85763B2724C40448002760BD /* DatabaseManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerProtocol.swift; sourceTree = "<group>"; };
 		85763B2A24C4070A002760BD /* ListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
+		85763B2D24C41280002760BD /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
+		85763B3224C4186E002760BD /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		85763B3424C4187D002760BD /* CellModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModelProtocol.swift; sourceTree = "<group>"; };
+		85763B3624C4188E002760BD /* ListItemCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCellModel.swift; sourceTree = "<group>"; };
+		85763B3C24C4B2D2002760BD /* ListViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewDataSource.swift; sourceTree = "<group>"; };
+		85763B3F24C4C4F7002760BD /* ListItemMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemMenuViewController.swift; sourceTree = "<group>"; };
+		85763B4224C51E56002760BD /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		85763B4424C51E9E002760BD /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		85763B4724C51EC8002760BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		85763B4924C52432002760BD /* ListViewDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewDataSourceProtocol.swift; sourceTree = "<group>"; };
+		85763B4D24C52672002760BD /* RepositoriesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesAssembly.swift; sourceTree = "<group>"; };
+		85763B5024C5271F002760BD /* CoreComponentsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreComponentsAssembly.swift; sourceTree = "<group>"; };
+		85763B5524C5294C002760BD /* TabBarChildProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarChildProtocol.swift; sourceTree = "<group>"; };
+		85E1EF9324C52B300085AAB6 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
+		85E1EF9524C5314A0085AAB6 /* ListItemMenuAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemMenuAssembly.swift; sourceTree = "<group>"; };
 		CDD9BAFDD2D66C2A0878C274 /* Pods_TestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,13 +116,10 @@
 		85763AFF24C3D64C002760BD /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				85763B4B24C5263E002760BD /* BusinessLogic */,
 				85763B2324C3F023002760BD /* Extensions */,
-				85763B2624C4043F002760BD /* DatabaseManager */,
-				85763B1E24C3ED12002760BD /* ListRepository.swift */,
-				85763B1B24C3EA44002760BD /* Models */,
-				85763B1424C3D8E1002760BD /* TabBarController.swift */,
 				85763B0024C3D64C002760BD /* AppDelegate.swift */,
-				85763B1624C3D9A9002760BD /* List */,
+				85763B2F24C4184D002760BD /* Presentation */,
 				85763B0924C3D64E002760BD /* Assets.xcassets */,
 				85763B0B24C3D64E002760BD /* LaunchScreen.storyboard */,
 				85763B0E24C3D64E002760BD /* Info.plist */,
@@ -103,10 +130,10 @@
 		85763B1624C3D9A9002760BD /* List */ = {
 			isa = PBXGroup;
 			children = (
-				85763B1924C3E980002760BD /* ListAssembly.swift */,
-				85763B1724C3D9BB002760BD /* ListViewModel.swift */,
-				85763B0424C3D64D002760BD /* ListViewController.swift */,
-				85763B2924C406F1002760BD /* Cells */,
+				85763B4124C51E00002760BD /* Coordinator */,
+				85763B3A24C418B8002760BD /* Assembly */,
+				85763B3924C418B2002760BD /* Model */,
+				85763B3824C418AA002760BD /* View */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -127,21 +154,159 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		85763B2624C4043F002760BD /* DatabaseManager */ = {
+		85763B2624C4043F002760BD /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				85763B2024C3EE96002760BD /* DatabaseManager.swift */,
+				85763B1B24C3EA44002760BD /* Models */,
 				85763B2724C40448002760BD /* DatabaseManagerProtocol.swift */,
+				85763B2024C3EE96002760BD /* DatabaseManager.swift */,
 			);
-			path = DatabaseManager;
+			path = Database;
 			sourceTree = "<group>";
 		};
 		85763B2924C406F1002760BD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				85763B2A24C4070A002760BD /* ListItemCell.swift */,
+				85763B3624C4188E002760BD /* ListItemCellModel.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		85763B2C24C41272002760BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85763B2D24C41280002760BD /* CheckboxView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		85763B2F24C4184D002760BD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				85763B5224C5283A002760BD /* TabBar */,
+				85763B3024C41857002760BD /* Base */,
+				85763B1624C3D9A9002760BD /* List */,
+				85763B3E24C4C4B4002760BD /* ListItemMenu */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		85763B3024C41857002760BD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				85763B4624C51EBA002760BD /* Routing */,
+				85763B3124C41860002760BD /* Cell */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		85763B3124C41860002760BD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				85763B3224C4186E002760BD /* CellProtocol.swift */,
+				85763B3424C4187D002760BD /* CellModelProtocol.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		85763B3824C418AA002760BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85763B3B24C4B2C8002760BD /* DataSource */,
+				85763B0424C3D64D002760BD /* ListViewController.swift */,
+				85763B2C24C41272002760BD /* Views */,
+				85763B2924C406F1002760BD /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85763B3924C418B2002760BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85763B1724C3D9BB002760BD /* ListViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85763B3A24C418B8002760BD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				85763B1924C3E980002760BD /* ListAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		85763B3B24C4B2C8002760BD /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				85763B4924C52432002760BD /* ListViewDataSourceProtocol.swift */,
+				85763B3C24C4B2D2002760BD /* ListViewDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		85763B3E24C4C4B4002760BD /* ListItemMenu */ = {
+			isa = PBXGroup;
+			children = (
+				85763B3F24C4C4F7002760BD /* ListItemMenuViewController.swift */,
+				85E1EF9524C5314A0085AAB6 /* ListItemMenuAssembly.swift */,
+			);
+			path = ListItemMenu;
+			sourceTree = "<group>";
+		};
+		85763B4124C51E00002760BD /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				85763B4424C51E9E002760BD /* ListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		85763B4624C51EBA002760BD /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				85763B4224C51E56002760BD /* Transition.swift */,
+				85763B4724C51EC8002760BD /* Coordinator.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		85763B4B24C5263E002760BD /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				85763B4F24C5270A002760BD /* CoreComponents */,
+				85763B4C24C52663002760BD /* Repositories */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		85763B4C24C52663002760BD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				85763B4D24C52672002760BD /* RepositoriesAssembly.swift */,
+				85763B1E24C3ED12002760BD /* ListRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		85763B4F24C5270A002760BD /* CoreComponents */ = {
+			isa = PBXGroup;
+			children = (
+				85763B5024C5271F002760BD /* CoreComponentsAssembly.swift */,
+				85763B2624C4043F002760BD /* Database */,
+			);
+			path = CoreComponents;
+			sourceTree = "<group>";
+		};
+		85763B5224C5283A002760BD /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				85763B5524C5294C002760BD /* TabBarChildProtocol.swift */,
+				85763B1424C3D8E1002760BD /* TabBarController.swift */,
+				85E1EF9324C52B300085AAB6 /* TabBarAssembly.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		94F5DA49D452CC9C4E2D9FBB /* Frameworks */ = {
@@ -266,17 +431,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85763B4324C51E56002760BD /* Transition.swift in Sources */,
 				85763B1824C3D9BB002760BD /* ListViewModel.swift in Sources */,
+				85763B3324C4186E002760BD /* CellProtocol.swift in Sources */,
 				85763B0524C3D64D002760BD /* ListViewController.swift in Sources */,
 				85763B2824C40448002760BD /* DatabaseManagerProtocol.swift in Sources */,
+				85763B2E24C41280002760BD /* CheckboxView.swift in Sources */,
+				85763B3D24C4B2D2002760BD /* ListViewDataSource.swift in Sources */,
+				85763B3724C4188E002760BD /* ListItemCellModel.swift in Sources */,
 				85763B2B24C4070A002760BD /* ListItemCell.swift in Sources */,
+				85763B4A24C52432002760BD /* ListViewDataSourceProtocol.swift in Sources */,
+				85763B4024C4C4F7002760BD /* ListItemMenuViewController.swift in Sources */,
+				85E1EF9624C5314A0085AAB6 /* ListItemMenuAssembly.swift in Sources */,
+				85763B4524C51E9E002760BD /* ListCoordinator.swift in Sources */,
 				85763B1A24C3E980002760BD /* ListAssembly.swift in Sources */,
+				85763B4824C51EC8002760BD /* Coordinator.swift in Sources */,
+				85763B5624C5294C002760BD /* TabBarChildProtocol.swift in Sources */,
 				85763B1524C3D8E1002760BD /* TabBarController.swift in Sources */,
+				85E1EF9424C52B300085AAB6 /* TabBarAssembly.swift in Sources */,
+				85763B5124C5271F002760BD /* CoreComponentsAssembly.swift in Sources */,
+				85763B4E24C52672002760BD /* RepositoriesAssembly.swift in Sources */,
 				85763B1D24C3EA51002760BD /* ListItemModel.swift in Sources */,
 				85763B1F24C3ED12002760BD /* ListRepository.swift in Sources */,
 				85763B2124C3EE96002760BD /* DatabaseManager.swift in Sources */,
 				85763B2524C3F02E002760BD /* RealmExtensions.swift in Sources */,
 				85763B0124C3D64C002760BD /* AppDelegate.swift in Sources */,
+				85763B3524C4187D002760BD /* CellModelProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +600,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = os.TestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.os.silsilaTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -439,7 +619,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = os.TestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.os.silsilaTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -8,6 +8,7 @@ target 'TestApp' do
   pod 'RealmSwift'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxDataSources'
   pod 'Swinject'
 
   # Pods for TestApp

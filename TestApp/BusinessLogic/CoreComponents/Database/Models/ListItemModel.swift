@@ -11,12 +11,17 @@ import RealmSwift
 
 final class ListItemModel: Object {
 
+    @objc dynamic var id = UUID().uuidString
     @objc dynamic var title: String = ""
     @objc dynamic var isChecked: Bool = false
 
-    // Уникальность объекта будет определяться по тайтлу
-
     override class func primaryKey() -> String? {
-        return "title"
+        return "id"
     }
+
+    init(title: String) {
+        self.title = title
+    }
+
+    required init() { }
 }

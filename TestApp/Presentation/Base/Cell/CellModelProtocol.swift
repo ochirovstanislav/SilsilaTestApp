@@ -1,5 +1,5 @@
 //
-//  ListAssembly.swift
+//  CellModelProtocol.swift
 //  TestApp
 //
 //  Created by stanislav on 19.07.2020.
@@ -7,11 +7,8 @@
 //
 
 import Foundation
-import Swinject
 
-final class ListAssembly: Assembly {
+protocol CellModelProtocol {
 
-    func assemble(container: Container) {
-        
-    }
+    static var cellIdentifier: String { get }
 }

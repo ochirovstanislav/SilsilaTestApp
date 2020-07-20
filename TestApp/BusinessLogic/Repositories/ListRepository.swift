@@ -8,15 +8,14 @@
 
 import Foundation
 
-// 
-
 protocol ListRepositoryProtocol {
 
     func addListItem(_ item: ListItemModel) -> Bool
     func deleteListItem(_ item: ListItemModel) -> Bool
     func checkListItem(_ item: ListItemModel) -> Bool
     func uncheckListItem(_ item: ListItemModel) -> Bool
-    func updateListItem(_ item: ListItemModel, newTitle: String) -> Bool
+    func updateTitleInListItem(_ item: ListItemModel, newTitle: String) -> Bool
+    func updateIsCheckedInListItem(_ item: ListItemModel, isChecked: Bool) -> Bool
     func obtainAllListItems() -> [ListItemModel]
 }
 
@@ -55,9 +54,15 @@ extension ListRepository: ListRepositoryProtocol {
         }
     }
 
-    func updateListItem(_ item: ListItemModel, newTitle: String) -> Bool {
+    func updateTitleInListItem(_ item: ListItemModel, newTitle: String) -> Bool {
         return databaseManager.updateItem {
             item.title = newTitle
+        }
+    }
+
+    func updateIsCheckedInListItem(_ item: ListItemModel, isChecked: Bool) -> Bool {
+        return databaseManager.updateItem {
+            item.isChecked = isChecked
         }
     }
 }

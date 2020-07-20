@@ -1,5 +1,5 @@
 //
-//  ListItemCell.swift
+//  CheckboxView.swift
 //  TestApp
 //
 //  Created by stanislav on 19.07.2020.
@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 struct CheckboxViewConfiguration {
 
@@ -16,24 +18,29 @@ struct CheckboxViewConfiguration {
 
 final class CheckboxView: UIControl {
 
-    var isChecked: Bool = false {
-        didSet{ setNeedsDisplay() }
-    }
+    let isChecked = BehaviorRelay<Bool>(value: false)
 
-    private var feedbackGenerator = UIImpactFeedbackGenerator.init(style: .light)
-    private let increasedTouchRadius: CGFloat = 5
+    private var feedbackGenerator = UIImpactFeedbackGenerator.init(style: .light) // Необходим для выбрации при нажатии
+    private let increasedTouchRadius: CGFloat = 10 // Радиус увеличения области нажатия на кнопку
     private let configuration: CheckboxViewConfiguration
+    private let disposeBag = DisposeBag()
 
     init(frame: CGRect = .zero, configuration: CheckboxViewConfiguration = .init()) {
         self.configuration = configuration
 
         super.init(frame: frame)
+
+        // Вызываем setNeedsDisplay() при изменении isChecked для перерисовки view (draw(_ rect: CGRect))
+        isChecked.subscribe(onNext: { [weak self] (_) in
+            self?.setNeedsDisplay()
+        }).disposed(by: disposeBag)
     }
 
     required init?(coder: NSCoder) {
         fatalError("CheckboxView: init(coder:) has not been implemented")
     }
 
+    // Отрисовываем края нашего чекбокса
     override func draw(_ rect: CGRect) {
         let newRectInset = configuration.borderWidth / 2
         let newRect = rect.insetBy(dx: newRectInset,
@@ -41,7 +48,7 @@ final class CheckboxView: UIControl {
 
         let context = UIGraphicsGetCurrentContext()!
 
-        context.setStrokeColor(isChecked ? configuration.checkedColor.cgColor : tintColor.cgColor)
+        context.setStrokeColor(isChecked.value ? configuration.checkedColor.cgColor : tintColor.cgColor)
         context.setLineWidth(configuration.borderWidth)
 
         let shapePath = UIBezierPath.init(ovalIn: newRect)
@@ -50,7 +57,7 @@ final class CheckboxView: UIControl {
         context.strokePath()
         context.fillPath()
 
-        if isChecked {
+        if isChecked.value {
             drawCheckMark(frame: newRect)
         }
     }
@@ -61,20 +68,23 @@ final class CheckboxView: UIControl {
         setNeedsDisplay()
     }
 
+    // Подготавливаем feedbackGenerator к вызову вибрации по нажатию на кнопку
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
 
         feedbackGenerator.prepare()
     }
 
+    // Отпуская кнопку, меняем значение isChecked и посылаем вибрацию
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
 
-        isChecked = !isChecked
+        isChecked.accept(!isChecked.value)
         sendActions(for: .valueChanged)
         self.feedbackGenerator.impactOccurred()
     }
 
+    // Увеличиваем область нажатия на кнопку
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         let relativeFrame = self.bounds
         let hitTestEdgeInsets = UIEdgeInsets(top: -increasedTouchRadius,
@@ -85,10 +95,15 @@ final class CheckboxView: UIControl {
 
         return hitFrame.contains(point)
     }
+}
+
+// MARK: - Private
+
+extension CheckboxView {
 
     private func drawCheckMark(frame: CGRect) {
-
         let bezierPath = UIBezierPath()
+        
         bezierPath.move(to: CGPoint(x: frame.minX + 0.26000 * frame.width, y: frame.minY + 0.50000 * frame.height))
         bezierPath.addCurve(to: CGPoint(x: frame.minX + 0.42000 * frame.width, y: frame.minY + 0.62000 * frame.height), controlPoint1: CGPoint(x: frame.minX + 0.38000 * frame.width, y: frame.minY + 0.60000 * frame.height), controlPoint2: CGPoint(x: frame.minX + 0.42000 * frame.width, y: frame.minY + 0.62000 * frame.height))
         bezierPath.addLine(to: CGPoint(x: frame.minX + 0.70000 * frame.width, y: frame.minY + 0.24000 * frame.height))
@@ -97,39 +112,5 @@ final class CheckboxView: UIControl {
         bezierPath.addCurve(to: CGPoint(x: frame.minX + 0.20000 * frame.width, y: frame.minY + 0.58000 * frame.height), controlPoint1: CGPoint(x: frame.minX + 0.44000 * frame.width, y: frame.minY + 0.76000 * frame.height), controlPoint2: CGPoint(x: frame.minX + 0.26000 * frame.width, y: frame.minY + 0.62000 * frame.height))
         configuration.checkedColor.setFill()
         bezierPath.fill()
-    }
-}
-
-final class ListItemCell: UITableViewCell {
-
-    private lazy var iconImageView: UIImageView = {
-        let outputImageView = UIImageView()
-
-        outputImageView.translatesAutoresizingMaskIntoConstraints = false
-        outputImageView.contentMode = .scaleAspectFit
-        return outputImageView
-    }()
-
-    private lazy var titleLabel: UILabel = {
-        let outputLabel = UILabel()
-
-        outputLabel.translatesAutoresizingMaskIntoConstraints = false
-        outputLabel.font = UIFont.systemFont(ofSize: 17.0, weight: .medium)
-        outputLabel.numberOfLines = 0
-        return outputLabel
-    }()
-
-    private lazy var checkBoxView: CheckboxView = {
-        let outputView = CheckboxView()
-
-        outputView.translatesAutoresizingMaskIntoConstraints = false
-        return outputView
-    }()
-}
-
-extension ListItemCell {
-
-    private func setupLayout() {
-
     }
 }
