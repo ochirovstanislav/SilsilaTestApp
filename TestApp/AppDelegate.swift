@@ -13,20 +13,11 @@ import Swinject
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-    var assembler = Assembler([
-        ListAssembly(),
-        RepositoriesAssembly(),
-        CoreComponentsAssembly(),
-        TabBarAssembly(),
-        ListItemMenuAssembly(),
-        ServiceListAssembly(),
-        ServiceAssembly()
-    ])
+    private let appManager: AppManagerProtocol = AppManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let initialVC = assembler.resolver.resolve(TabBarController.self)
+        let initialVC = appManager.initialViewController
         let window = UIWindow(frame: UIScreen.main.bounds)
 
         window.rootViewController = initialVC
@@ -35,7 +26,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         return true
     }
-
-
 }
 

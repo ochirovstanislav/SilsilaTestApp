@@ -20,6 +20,8 @@
 		8531F45924C5C64A0012EA98 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8531F45824C5C64A0012EA98 /* LocalizedStrings.swift */; };
 		8531F45B24C5CE7F0012EA98 /* ServiceItemCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8531F45A24C5CE7F0012EA98 /* ServiceItemCellModel.swift */; };
 		8531F45E24C5DA870012EA98 /* ServiceListItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8531F45D24C5DA870012EA98 /* ServiceListItemModel.swift */; };
+		8531F46224C5DF730012EA98 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8531F46124C5DF730012EA98 /* AppManager.swift */; };
+		8531F46524C5E07F0012EA98 /* AppManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8531F46424C5E07F0012EA98 /* AppManagerProtocol.swift */; };
 		85763B0124C3D64C002760BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B0024C3D64C002760BD /* AppDelegate.swift */; };
 		85763B0524C3D64D002760BD /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85763B0424C3D64D002760BD /* ListViewController.swift */; };
 		85763B0A24C3D64E002760BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85763B0924C3D64E002760BD /* Assets.xcassets */; };
@@ -72,6 +74,8 @@
 		8531F45824C5C64A0012EA98 /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
 		8531F45A24C5CE7F0012EA98 /* ServiceItemCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceItemCellModel.swift; sourceTree = "<group>"; };
 		8531F45D24C5DA870012EA98 /* ServiceListItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListItemModel.swift; sourceTree = "<group>"; };
+		8531F46124C5DF730012EA98 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		8531F46424C5E07F0012EA98 /* AppManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManagerProtocol.swift; sourceTree = "<group>"; };
 		85763AFD24C3D64C002760BD /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85763B0024C3D64C002760BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85763B0424C3D64D002760BD /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -252,6 +256,15 @@
 				8577EF3C24C5985100CBAFC0 /* ServiceListServiceProtocol.swift */,
 			);
 			path = ServiceListService;
+			sourceTree = "<group>";
+		};
+		8531F46324C5E0770012EA98 /* AppManager */ = {
+			isa = PBXGroup;
+			children = (
+				8531F46124C5DF730012EA98 /* AppManager.swift */,
+				8531F46424C5E07F0012EA98 /* AppManagerProtocol.swift */,
+			);
+			path = AppManager;
 			sourceTree = "<group>";
 		};
 		85763AF424C3D64C002760BD = {
@@ -453,6 +466,7 @@
 				85763B5024C5271F002760BD /* CoreComponentsAssembly.swift */,
 				850AE18924C5934300AA5FC1 /* XMLParserManager */,
 				85763B2624C4043F002760BD /* Database */,
+				8531F46324C5E0770012EA98 /* AppManager */,
 			);
 			path = CoreComponents;
 			sourceTree = "<group>";
@@ -618,11 +632,13 @@
 			files = (
 				85763B4324C51E56002760BD /* Transition.swift in Sources */,
 				85763B1824C3D9BB002760BD /* ListViewModel.swift in Sources */,
+				8531F46524C5E07F0012EA98 /* AppManagerProtocol.swift in Sources */,
 				85763B3324C4186E002760BD /* CellProtocol.swift in Sources */,
 				85763B0524C3D64D002760BD /* ListViewController.swift in Sources */,
 				850AE18B24C5934A00AA5FC1 /* XMLParserManagerProtocol.swift in Sources */,
 				8531F45E24C5DA870012EA98 /* ServiceListItemModel.swift in Sources */,
 				85763B2824C40448002760BD /* DatabaseManagerProtocol.swift in Sources */,
+				8531F46224C5DF730012EA98 /* AppManager.swift in Sources */,
 				85763B2E24C41280002760BD /* CheckboxView.swift in Sources */,
 				8577EF3D24C5985100CBAFC0 /* ServiceListServiceProtocol.swift in Sources */,
 				85763B3D24C4B2D2002760BD /* ListViewDataSource.swift in Sources */,
